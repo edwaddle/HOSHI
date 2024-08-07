@@ -1,0 +1,24 @@
+main{
+    background-color: black;
+    height:100vh;
+    width:100vw;
+    position: relative;
+    overflow:hidden;
+}
+body{
+    padding:0;
+    margin:0;
+}
+
+.background{
+    position: absolute;
+    width:100vw;
+    top: calc(50% - 600px);
+    left:50%;
+    transform:translate(-50%);
+}
+.front{
+    position:absolute;
+    z-index: 1;
+    top: calc(50% - 600px);
+}
