@@ -1,4 +1,10 @@
+const scrollToSection2 = document.querySelector(".scrollToSection2");
 
+scrollToSection2.onclick = () => {
+    var elem = document.querySelector(".section2")
+    elem.scrollIntoView({behavior: 'smooth', block: 'center'});
+    
+}
 
 /*
 const parallax_el = document.querySelectorAll(".parallax");

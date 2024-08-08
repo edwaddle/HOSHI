@@ -2,7 +2,7 @@
 body{
     padding:0;
     margin:0;
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 main{
     background-color: rgb(242, 242, 242);
@@ -33,7 +33,7 @@ ul {
   .horanghaeHammy{
     display:inline;
     height:80px;
-    filter: grayscale(30%);
+    filter: grayscale(20%);
   }
 .linkContainer{
     display:flex;
@@ -62,7 +62,7 @@ h1{
     font-size: 75px;
 }
 .name{
-    position: absolute;
+    position: fixed;
     left: 50%;
     transform: translate(-50%, -50%);
     width:100%; /*centers the word */
@@ -84,21 +84,54 @@ h1{
     background-size:cover;
 }
 
+.scrollToSection2{
+    position: absolute;
+    z-index: 7;
+    top:calc(-15vh - 30px);
+    display:flex;
+    justify-content: center;
+    width:75px;
+    height:75px;
+    font-size:50px;
+    margin:0;
+    text-decoration:none;
+    border:solid white 4px;
+    border-radius:100px;
+    background-color:transparent;
+    color:white;
+
+}
+
 .audienceImage{
     background-image: url('./images/HOSHI_FULL.png');
     position: absolute;
     width:100%;
-    height:calc(100% + 150px);
-    top:-150px;
+    height:calc(100% + 15vh);
+    top:-15vh;
     background-repeat:no-repeat;
     background-size:cover;
 }
 
 
 
-.under{
+.section2{
     position:absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     height:100vh;
+    width:100%;
+}
+
+.hoshiHeadphones{
+    background-image: url('./images/HoshiHeadphones.png');
+    padding:50vh 30vw ;
+    background-repeat:no-repeat;
+    background-size:contain;
+    z-index: 7;
+    transform: scaleX(-1);
+
+
 }
 
 /*
