@@ -1,34 +1,99 @@
-main{
-    background-color: rgb(242, 242, 242);
-    height:100vh;
-    width:100vw;
-    position: relative;
-    overflow-x:hidden;
-    overflow-y: hidden;
-}
+
 body{
     padding:0;
     margin:0;
 }
+main{
+    background-color: rgb(242, 242, 242);
+    height:100vh;
+    width:100%;
+    position: relative;
+    margin:0px;
+    overflow-x: hidden;
+}
+.sticky{
+    top:0;
+    padding-top: 50px;
+    position: sticky;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    z-index:7;
+}
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow:hidden;
+    overflow-x: hidden;
     display:flex;
-    /*background-color: grey;*/
     justify-content: space-between;
     padding: 0 100px;
   }
 
+  .horanghaeHammy{
+    display:inline;
+    height:80px;
+    filter: grayscale(30%);
+  }
 .linkContainer{
     display:flex;
     align-items: center;
+    z-index:7;
 }
 .navLink{
-    color:black;
-    text-decoration:none;
-    margin-left: 20px;
+    color:white;
+    text-decoration:underline;
+    margin-left: 60px;
+    font-size: 25px;
+    font-weight: 500;
+}
+h1{
+    color:white;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.korean{
+    top: 50%;
+    font-size: 300px;
+}
+.english{
+    top: calc(50% + 175px);
+    font-size: 75px;
+}
+.name{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:100%; /*centers the word */
+    display: flex;
+    justify-content: center;
+    margin:0;
+    padding: 0;
+    color: white;
+    z-index:5;
+}
+
+.frontImage{
+    background-image: url('./images/HOSHI.png');
+    position: absolute;
+    z-index: 6;
+    width:100%;
+    height:calc(100%);
+}
+
+.audienceImage{
+    background-image: url('./images/HOSHI_FULL.png');
+    position: absolute;
+    width:100%;
+    height:calc(100% + 150px);
+    top:-150px;
+}
+
+
+
+.under{
+    position:absolute;
+    height:100vh;
 }
 
 /*
