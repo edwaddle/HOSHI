@@ -2,6 +2,7 @@
 body{
     padding:0;
     margin:0;
+    font-family: "Times New Roman", Times, serif;
 }
 main{
     background-color: rgb(242, 242, 242);
@@ -79,6 +80,8 @@ h1{
     z-index: 6;
     width:100%;
     height:calc(100%);
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 
 .audienceImage{
@@ -87,6 +90,8 @@ h1{
     width:100%;
     height:calc(100% + 150px);
     top:-150px;
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 
 
